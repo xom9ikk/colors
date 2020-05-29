@@ -1,0 +1,20 @@
+version: "3.5"
+services:
+  colors-prod:
+    image: colors-prod
+    container_name: colors-prod
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "172.50.8.1:8080:80"
+    networks:
+      colors-prod_net:
+        ipv4_address: 172.50.8.11
+
+networks:
+  colors-prod_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.50.8.0/24"
