@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0;
+  &--color {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 1rem;
+  }
+  &--text {
+    margin: 1rem 0;
+    font-size: 22px;
+    font-family: "Nunito Light", sans-serif;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,53 @@
+.controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 25rem;
+  margin-bottom: 100px;
+  &--button {
+    font-size: 14px;
+    font-family: "Nunito Light", sans-serif;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    img {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      transition: transform .2s;
+    }
+  }
+  &--generate {
+    background-color: #d1d7e0;
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+    &:hover {
+      background: #ccd1db;
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &--back {
+    background-color: #eaedf3;
+    color: #5d656f;
+    flex: 0 0 49%;
+    &:hover {
+      background: #e5e8ee;
+    }
+  }
+  &--copy {
+    background-color: #eaedf3;
+    color: #5d656f;
+    flex: 0 0 49%;
+    &:hover {
+      background: #e5e8ee;
+    }
+  }
+}

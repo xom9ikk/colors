@@ -1,0 +1,66 @@
+.menu {
+  $block: &;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  &--icon {
+    height: 24px;
+    width: 24px;
+    &:hover {
+      cursor: pointer;
+    }
+    transition: transform .5s ease-in-out;
+  }
+  &--content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+  &--element-wrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    transition: margin-right .2s ease-in-out;
+    & img {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &--separator {
+    height: 30px;
+    width: 1px;
+    background: #d3d3d3;
+    margin: 0;
+    transition: margin .5s ease-in-out;
+  }
+  &--button {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    background: #edeff1;
+    border-radius: 100px;
+    padding: .75rem 1rem .625rem;
+  }
+  &__open {
+    .menu--icon {
+      transform: rotate(-90deg);
+    }
+    .menu--content {
+      width: 250px;
+      opacity: 1;
+    }
+    .menu--element-wrapper {
+      margin-right: 20px;
+    }
+    .menu--separator {
+      margin: 0px 14px;
+    }
+  }
+}

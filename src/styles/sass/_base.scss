@@ -5,39 +5,54 @@
 }
 
 @font-face {
-  font-family: "SF Regular";
-  src: url('../../assets/fonts/SFCompactText-Regular.woff2') format('woff2'),
-  url("../../assets/fonts/SFCompactText-Regular.woff") format("woff");
+  font-family: "Nunito Extra Light";
+  src: url('../../assets/fonts/Nunito-ExtraLight.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-ExtraLight.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "SF Medium";
-  src: url("../../assets/fonts/SFCompactText-Medium.woff2") format("woff2"),
-  url("../../assets/fonts/SFCompactText-Medium.woff") format("woff");
+  font-family: "Nunito Light";
+  src: url('../../assets/fonts/Nunito-Light.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-Light.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "SF Light";
-  src: url("../../assets/fonts/SFUIDisplay-Light.woff2") format("woff2"),
-  url("../../assets/fonts/SFUIDisplay-Light.woff") format("woff");
+  font-family: "Nunito Regular";
+  src: url('../../assets/fonts/Nunito-Regular.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-Regular.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "SF Ultra Light";
-  src: url("../../assets/fonts/SFUIDisplay-Ultralight.woff2") format("woff2"),
-  url("../../assets/fonts/SFUIDisplay-Ultralight.woff") format("woff");
+  font-family: "Nunito Semi Bold";
+  src: url('../../assets/fonts/Nunito-SemiBold.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-SemiBold.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Nunito Bold";
+  src: url('../../assets/fonts/Nunito-Bold.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Nunito Extra Bold";
+  src: url('../../assets/fonts/Nunito-ExtraBold.woff2') format('woff2'),
+  url("../../assets/fonts/Nunito-ExtraBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
 body {
-  font-family: 'SF Regular', "SF Medium", 'Open Sans', sans-serif !important;
+  font-family: "Nunito Regular", "Nunito Medium", 'Open Sans', sans-serif;
   background-color: $white;
   -webkit-appearance: none;
   margin: 0px;
