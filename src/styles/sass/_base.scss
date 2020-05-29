@@ -1,0 +1,66 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SF Regular";
+  src: url("../../assets/fonts/SF-Compact-Text-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SF Medium";
+  src: url("../../assets/fonts/SF-Compact-Text-Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SF Light";
+  src: url("../../assets/fonts/SF-UI-Display-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "SF Ultra Light";
+  src: url("../../assets/fonts/SF-UI-Display-Ultralight.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'SF Regular', "SF Medium", 'Open Sans', sans-serif !important;
+  background-color: $white;
+  -webkit-appearance: none;
+  margin: 0px;
+  letter-spacing: 0.3px;
+  -moz-user-select: none; /* Mozilla Firefox */
+  -ms-user-select: none; /* Internet Explorer (не поддерживается) */
+  -o-user-select: none; /* Opera Presto (не поддерживается) */
+  -webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  outline: none;
+  &:hover:enabled {
+    cursor: pointer;
+  }
+}
+
+
