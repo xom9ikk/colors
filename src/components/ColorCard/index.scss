@@ -2,15 +2,50 @@
   display: flex;
   flex-direction: column;
   margin: 100px 0;
-  &--color {
+  &__color {
     width: 25rem;
     height: 25rem;
     border-radius: 1rem;
+    background: #ffffff;
   }
-  &--text {
+  &__text {
     margin: 1rem 0;
     font-size: 22px;
     font-family: "Nunito Light", sans-serif;
     letter-spacing: 1px;
+    display: flex;
+  }
+  &__gradient {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    img {
+      height: 7px;
+      margin: 0 7px
+    }
+  }
+  &__gradient-text {
+    font-size: 22px;
+    font-family: "Nunito Light", sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    img {
+      height: 7px;
+      margin: 0 7px;
+    }
+  }
+  &__gradient-deg {
+    font-size: 22px;
+    font-family: "Nunito Light", sans-serif;
+    color: #9a9a9a;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-end;
   }
 }

@@ -1,13 +1,20 @@
 import React, { FC, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { IRootState } from '../../store/reducers/state';
+import { EnumTheme } from '../../types';
+import { ThemeActions } from '../../store/actions';
 
 export const Menu: FC = () => {
+  const dispatch = useDispatch();
+  const appTheme = useSelector((state: IRootState) => state.theme);
+  const isDark = appTheme === EnumTheme.Dark;
   const [isOpen, setIsOpen] = useState(false);
   const handlerClick = () => {
     setIsOpen((prev) => !prev);
   };
   const handlerThemeClick = () => {
-    setIsOpen((prev) => !prev);
+    const newTheme = isDark ? EnumTheme.Light : EnumTheme.Dark;
+    dispatch(ThemeActions.setTheme(newTheme));
   };
   const image = isOpen ? '/svg/close.svg' : '/svg/menu.svg';
   return (
@@ -15,29 +22,29 @@ export const Menu: FC = () => {
       <img
         src={image}
         alt="menu"
-        className="menu--icon"
+        className="menu__icon"
         onClick={handlerClick}
       />
-      <div className="menu--content">
-        <span className="menu--separator" />
-        <div className="menu--element-wrapper">
+      <div className="menu__content">
+        <span className="menu__separator" />
+        <div className="menu__element-wrapper">
           <img
-            src="/svg/theme-light.svg"
+            src={isDark ? '/svg/theme-dark.svg' : '/svg/theme-light.svg'}
             alt="menu"
             onClick={handlerThemeClick}
           />
         </div>
-        <div className="menu--element-wrapper">
+        <div className="menu__element-wrapper">
           <img
             src="/svg/info.svg"
             alt="menu"
             onClick={handlerThemeClick}
           />
         </div>
-        <div className="menu--element-wrapper">
-          <div className="menu--button">
-            <div className="logo--square" />
-            <span className="logo--text">
+        <div className="menu__element-wrapper">
+          <div className="menu__button">
+            <div className="logo__square" />
+            <span className="logo__text">
               FontXoms
             </span>
           </div>

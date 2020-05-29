@@ -1,7 +1,9 @@
 import {
-  IUser
+  EnumTheme,
+  IPalette,
 } from '../../types';
 
 export interface IRootState {
-  user: IUser,
+  palette: IPalette,
+  theme: EnumTheme,
 }

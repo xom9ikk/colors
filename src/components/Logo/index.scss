@@ -4,14 +4,14 @@
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
-  &--square {
+  &__square {
     background: #f26c4b;
     width: 11px;
     height: 11px;
     border-radius: 25%;
+    margin-top: -2px;
   }
-  &--text {
-    color: $primary-text;
+  &__text {
     padding-left: 3px;
     font-size: 16px;
     font-family: "Nunito Extra Bold", sans-serif;

@@ -5,26 +5,30 @@ import { ColorCard } from '../ColorCard';
 import { Controls } from '../Controls';
 import { IRootState } from '../../store/reducers/state';
 import { PaletteActions } from '../../store/actions';
+import { IGradient } from '../../types';
 
-export const ColorSection: FC = () => {
+export const GradientSection: FC = () => {
   const dispatch = useDispatch();
   const palette = useSelector(((state: IRootState) => state.palette));
-  const handleGenerate = (generatedColor: string) => {
-    dispatch(PaletteActions.addColor(generatedColor));
+  const { currentGradient } = palette;
+  const handleGenerate = (generatedGradient: IGradient) => {
+    dispatch(PaletteActions.addGradient(generatedGradient));
   };
   const handleBack = () => {
-    dispatch(PaletteActions.popColor());
+    dispatch(PaletteActions.popGradient());
   };
   const handleCopy = () => {
-    copy(palette.currentColor);
+    const gradient = `linear-gradient(${currentGradient.deg}deg, ${currentGradient.start}, ${currentGradient.end})`;
+    copy(gradient);
   };
   return (
     <main className="color-section">
-      <ColorCard color={palette.currentColor} />
+      <ColorCard gradientColor={palette.currentGradient} />
       <Controls
         onGenerate={handleGenerate}
         onBack={handleBack}
         onCopy={handleCopy}
+        isGradient
       />
     </main>
   );

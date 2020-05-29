@@ -3,6 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 25rem;
+  justify-content: space-between;
   margin-bottom: 100px;
   &--button {
     font-size: 14px;
@@ -24,30 +25,18 @@
     }
   }
   &--generate {
-    background-color: #d1d7e0;
     flex: 0 0 100%;
     margin-bottom: 15px;
     &:hover {
-      background: #ccd1db;
       img {
         transform: rotate(180deg);
       }
     }
   }
   &--back {
-    background-color: #eaedf3;
-    color: #5d656f;
     flex: 0 0 49%;
-    &:hover {
-      background: #e5e8ee;
-    }
   }
   &--copy {
-    background-color: #eaedf3;
-    color: #5d656f;
     flex: 0 0 49%;
-    &:hover {
-      background: #e5e8ee;
-    }
   }
 }

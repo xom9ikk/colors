@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 export const Navigation: FC = () => (
   <nav className="nav">
-    <ul className="nav--wrapper">
+    <ul className="nav__wrapper">
       <li>
         <NavLink
           to="/"
           exact
-          className="nav--link"
-          activeClassName="nav--link__active"
+          className="nav__link"
+          activeClassName="nav__link--active"
         >
           Colors
         </NavLink>
@@ -18,8 +18,8 @@ export const Navigation: FC = () => (
         <NavLink
           to="/gradients"
           exact
-          className="nav--link"
-          activeClassName="nav--link__active"
+          className="nav__link"
+          activeClassName="nav__link--active"
         >
           Gradients
         </NavLink>

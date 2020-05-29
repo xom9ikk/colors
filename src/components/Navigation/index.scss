@@ -3,21 +3,14 @@
   flex-direction: row;
   flex: 1;
   justify-content: center;
-  &--wrapper {
+  &__wrapper {
     display: flex;
     list-style: none;
     padding: 0px
   }
-  &--link {
+  &__link {
     font-size: 16px;
     padding: 0 15px;
     font-family: 'Nunito Semi Bold', sans-serif;
-    color: $text;
-    :visited {
-      color: $primary-text;
-    }
-    &__active {
-      color: $primary-text;
-    }
   }
 }
