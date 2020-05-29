@@ -5,14 +5,14 @@ import { configureStore } from './store/configureStore';
 import * as serviceWorker from './serviceWorker';
 
 import './styles/sass/main.scss';
-import { App } from './components/App';
+import { Main } from './pages/Main';
 
 const store = configureStore();
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root'),
+  <Provider store={store}>
+    <Main />
+  </Provider>,
+  document.getElementById('root'),
 );
 
 serviceWorker.unregister();

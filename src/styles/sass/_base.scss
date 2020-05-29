@@ -6,28 +6,32 @@
 
 @font-face {
   font-family: "SF Regular";
-  src: url("../../assets/fonts/SF-Compact-Text-Regular.otf") format("opentype");
+  src: url('../../assets/fonts/SFCompactText-Regular.woff2') format('woff2'),
+  url("../../assets/fonts/SFCompactText-Regular.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "SF Medium";
-  src: url("../../assets/fonts/SF-Compact-Text-Medium.otf") format("opentype");
+  src: url("../../assets/fonts/SFCompactText-Medium.woff2") format("woff2"),
+  url("../../assets/fonts/SFCompactText-Medium.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "SF Light";
-  src: url("../../assets/fonts/SF-UI-Display-Light.otf") format("opentype");
+  src: url("../../assets/fonts/SFUIDisplay-Light.woff2") format("woff2"),
+  url("../../assets/fonts/SFUIDisplay-Light.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "SF Ultra Light";
-  src: url("../../assets/fonts/SF-UI-Display-Ultralight.otf") format("opentype");
+  src: url("../../assets/fonts/SFUIDisplay-Ultralight.woff2") format("woff2"),
+  url("../../assets/fonts/SFUIDisplay-Ultralight.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
