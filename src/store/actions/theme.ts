@@ -7,7 +7,7 @@ enum Type {
 
 const setTheme = createAction(
   Type.SET_THEME,
-  (payload: EnumTheme) => (payload),
+  (payload: EnumTheme) => payload,
 );
 
 export const ThemeActions = {

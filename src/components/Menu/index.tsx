@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { IRootState } from '../../store/reducers/state';
 import { EnumTheme } from '../../types';
-import { ThemeActions } from '../../store/actions';
+import { ThemeEffects } from '../../store/effects';
 
 export const Menu: FC = () => {
   const dispatch = useDispatch();
@@ -14,7 +14,7 @@ export const Menu: FC = () => {
   };
   const handlerThemeClick = () => {
     const newTheme = isDark ? EnumTheme.Light : EnumTheme.Dark;
-    dispatch(ThemeActions.setTheme(newTheme));
+    dispatch(ThemeEffects.saveTheme(newTheme));
   };
   const image = isOpen ? '/svg/close.svg' : '/svg/menu.svg';
   return (
