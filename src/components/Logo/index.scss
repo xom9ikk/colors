@@ -10,6 +10,9 @@
     height: 11px;
     border-radius: 25%;
     margin-top: -2px;
+    &--external {
+      background: #fac950;
+    }
   }
   &__text {
     padding-left: 3px;

@@ -43,7 +43,7 @@ export const Menu: FC = () => {
         </div>
         <div className="menu__element-wrapper">
           <div className="menu__button">
-            <div className="logo__square" />
+            <div className="logo__square logo__square--external" />
             <span className="logo__text">
               FontXoms
             </span>
