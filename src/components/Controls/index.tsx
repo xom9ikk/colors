@@ -27,6 +27,7 @@ export const Controls: FC<IControls> = ({
 
   useEffect(() => {
     generateHandler();
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {

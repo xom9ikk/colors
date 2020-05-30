@@ -17,8 +17,10 @@ export const PaletteReducer = handleActions<IPalette, IPalette>({
   [PaletteActions.Type.ADD_COLOR]:
         (state, action) => ({
           ...state,
+          colors: state.currentColor
+            ? [...state.colors, state.currentColor]
+            : [...state.colors],
           currentColor: action.payload.currentColor,
-          colors: [...state.colors, action.payload.currentColor],
         }),
   [PaletteActions.Type.POP_COLOR]:
         (state) => ({
@@ -29,8 +31,10 @@ export const PaletteReducer = handleActions<IPalette, IPalette>({
   [PaletteActions.Type.ADD_GRADIENT]:
         (state, action) => ({
           ...state,
+          gradients: state.currentGradient.deg
+            ? [...state.gradients, state.currentGradient]
+            : [...state.gradients],
           currentGradient: action.payload.currentGradient,
-          gradients: [...state.gradients, action.payload.currentGradient],
         }),
   [PaletteActions.Type.POP_GRADIENT]:
         (state) => ({
