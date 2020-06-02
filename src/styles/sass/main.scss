@@ -29,6 +29,9 @@
       }
       &__button {
         background: #edeff1;
+        &:hover {
+          background: #e3e5e7;
+        }
       }
     }
     .card {
@@ -88,6 +91,9 @@
       }
       &__button {
         background: #30343a;
+        &:hover{
+          background: #3a3e44;
+        }
       }
     }
     .card {
