@@ -1,6 +1,7 @@
 import React, { FC, useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { Background } from '../components/Background';
 import { Header } from '../components/Header';
 import { ColorSection } from '../components/ColorSection';
 import { GradientSection } from '../components/GradientSection';
@@ -17,21 +18,22 @@ export const Main: FC = () => {
   }, [dispatch]);
 
   return (
-    <>
-      <div className={`container ${theme}`}>
+    <div className={`container ${theme}`}>
+      <Background>
         <Header />
-        <Route
-          path="/"
-          exact
-          render={() => <ColorSection />}
-        />
-        <Route
-          path="/gradients"
-          exact
-          render={() => <GradientSection />}
-        />
-      </div>
-
-    </>
+        <main>
+          <Route
+            path="/"
+            exact
+            render={() => <ColorSection />}
+          />
+          <Route
+            path="/gradients"
+            exact
+            render={() => <GradientSection />}
+          />
+        </main>
+      </Background>
+    </div>
   );
 };

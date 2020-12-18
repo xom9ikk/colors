@@ -37,7 +37,6 @@ export const ColorCard: FC<ICard> = ({ color, gradientColor }) => {
               </span>
             )
         }
-      <span className="card__text" />
     </div>
   );
 };

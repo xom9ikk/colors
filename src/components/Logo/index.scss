@@ -1,9 +1,11 @@
 .logo {
   display: flex;
-  flex: 1;
   justify-content: flex-start;
+  flex: 1;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
+  transition: opacity .75s ease-in-out;
   &__square {
     background: #f26c4b;
     width: 11px;

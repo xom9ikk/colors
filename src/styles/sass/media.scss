@@ -1,0 +1,49 @@
+$first-breakpoint: 968px;
+$second-breakpoint: 700px;
+$third-breakpoint: 480px;
+
+@media screen and (max-width: $first-breakpoint) {
+  .header {
+    height: 80px;
+  }
+  .nav {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $second-breakpoint) {
+  .logo--menu-open {
+    flex: 0;
+    opacity: 0;
+  }
+  .header {
+    height: 60px;
+  }
+  .nav {
+    top: 60px;
+  }
+}
+
+
+@media screen and (max-width: $third-breakpoint) {
+  .card {
+    &__color {
+      width: 250px;
+      height: 250px;
+    }
+    &__gradient {
+      &-text {
+        font-size: 16px;
+      }
+      &-deg {
+        font-size: 16px;
+      }
+    }
+  }
+  .controls {
+    width: 250px;
+  }
+}

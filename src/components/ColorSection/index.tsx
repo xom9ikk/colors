@@ -19,13 +19,13 @@ export const ColorSection: FC = () => {
     copy(palette.currentColor);
   };
   return (
-    <main className="color-section">
+    <section className="color-section">
       <ColorCard color={palette.currentColor} />
       <Controls
         onGenerate={handleGenerate}
         onBack={handleBack}
         onCopy={handleCopy}
       />
-    </main>
+    </section>
   );
 };

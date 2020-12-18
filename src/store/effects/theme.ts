@@ -4,7 +4,7 @@ import { EnumTheme } from '../../types';
 
 const restoreTheme = () => async (dispatch: Function) => {
   try {
-    const theme = JSON.parse(localStorage.getItem('theme') || '');
+    const theme = JSON.parse(String(localStorage.getItem('theme')));
     dispatch(ThemeActions.setTheme(theme));
   } catch (error) {
     console.error('restoreTheme', error);

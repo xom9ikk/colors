@@ -13,7 +13,9 @@ export const Controls: FC<IControls> = ({
   onCopy, isGradient,
 }) => {
   const { hex, deg } = useGenerate();
+
   const [isCopied, setIsCopied] = useState(false);
+
   const generateHandler = () => {
     if (!isGradient) {
       return onGenerate(hex());
