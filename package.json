@@ -1,6 +1,7 @@
 {
   "name": "colors",
   "version": "0.1.0",
+  "description": "Generate random colors and gradients",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
