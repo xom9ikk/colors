@@ -10,7 +10,7 @@ To generate a new color or gradient, just click on the *generate button*.
 All *information* about the current color or gradient is displayed below the color card. 
 If you accidentally generated a new color, but the previous color seemed to you more successful, then you can press the *back button* and thus navigate through the previously generated colors.
 
-## How can this be useful?
+## 🧲 How can this be useful?
 This can be helpful when choosing a color for a new design.
 The algorithm that controls the color generation **does not use all very saturated colors** in the generation.
 This way, you only get the colors that can be used in the design.
