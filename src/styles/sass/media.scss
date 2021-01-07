@@ -15,10 +15,6 @@ $third-breakpoint: 480px;
 }
 
 @media screen and (max-width: $second-breakpoint) {
-  .logo--menu-open {
-    flex: 0;
-    opacity: 0;
-  }
   .header {
     height: 60px;
   }
@@ -27,8 +23,11 @@ $third-breakpoint: 480px;
   }
 }
 
-
 @media screen and (max-width: $third-breakpoint) {
+  .logo--menu-open {
+    flex: 0;
+    opacity: 0;
+  }
   .card {
     &__color {
       width: 250px;
