@@ -29,7 +29,6 @@
   "bugs": {
     "url": "https://github.com/xom9ikk/colors/issues"
   },
-  "homepage": "https://github.com/xom9ikk/colors#readme",
   "eslintConfig": {
     "extends": "react-app"
   },
