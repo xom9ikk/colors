@@ -2,6 +2,7 @@ version: "3.5"
 services:
   colors-prod:
     image: colors-prod
+    restart: always
     container_name: colors-prod
     build:
       context: ./
